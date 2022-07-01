@@ -12,13 +12,13 @@ AUR is a repository of plugins for minecraft servers, you can choose plugins fro
 
 TODO
 -----
-[ ] AUR core/bukkit
+- [ ] AUR core/bukkit
 
-[ ] Plugin hub
+- [ ] Plugin hub
 
-[ ] Plugin load/unload
+- [ ] Plugin load/unload
 
-[ ] Plugin update/autoupdate
+- [ ] Plugin update/autoupdate
 
-[ ] Sponge/BungeeCord/Velocity/Fabric support
+- [ ] Sponge/BungeeCord/Velocity/Fabric support
 

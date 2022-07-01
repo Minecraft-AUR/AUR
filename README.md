@@ -1,7 +1,5 @@
 <div align="center"><img src=".github/AUR.png"></div>
 
-# NOW IN DEV
-
 # <center> **AUR**
 
 [![GitHub license](https://img.shields.io/github/license/Minecraft-AUR/AUR?style=flat-square)](https://github.com/Minecraft-AUR/AUR/)
@@ -14,7 +12,7 @@ AUR is a repository of plugins for minecraft servers, you can choose plugins fro
 
 TODO
 -----
-- [ ] AUR core/bukkit
+- [ ] AUR core
 
 - [ ] Plugin hub
 
@@ -22,5 +20,5 @@ TODO
 
 - [ ] Plugin update/autoupdate
 
-- [ ] Sponge/BungeeCord/Velocity/Fabric support
+- [ ] Bukkit/Sponge/BungeeCord/Velocity/Fabric support
 

@@ -1,16 +1,24 @@
-#IDEA
-/.idea/
-.gradle/
-out/
-
-#Eclipse
+# eclipse
+eclipse
+bin
+*.launch
+.settings
+.metadata
 .classpath
 .project
-.settings/
 
-#NetBrains
-nbproject/
-nbactions.xml
+# idea
+out
+classes
+*.ipr
+*.iws
+*.iml
+.idea
 
-#Other
-build/
+# gradle
+build
+.gradle
+
+#Netbeans
+.nb-gradle
+.nb-gradle-properties

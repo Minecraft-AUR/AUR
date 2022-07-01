@@ -1,5 +1,5 @@
 #IDEA
-.idea
+/.idea/
 .gradle/
 out/
 

@@ -1,0 +1,8 @@
+include(
+        'bukkit',
+        'core',
+        'loader-utils'
+)
+
+rootProject.name = 'AUR'
+

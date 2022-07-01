@@ -5,4 +5,5 @@ include(
 )
 
 rootProject.name = 'AUR'
+include 'sponge'
 

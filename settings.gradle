@@ -1,9 +1,9 @@
 include(
         'bukkit',
         'core',
-        'loader-utils'
+        'loader-utils',
+        'sponge'
 )
 
 rootProject.name = 'AUR'
-include 'sponge'
 

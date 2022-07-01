@@ -1,0 +1,27 @@
+name: AUR
+author: Minecraft AUR OpenSource Community
+api-version: 1.13
+version: 1.0.0
+
+commands:
+  aur:
+    aliases:
+      - aur
+    description: Run this command to get AUR's help message.
+
+permissions:
+  "aur.update":
+    description: Make op can update plugin.
+    default: op
+  "aur.download":
+    description: To get AUR plugin Hub plugin.
+    default: op
+  "aur.delete":
+    description: Allow op to delete useless plugin and their folder.
+    default: op
+  "aur.checkupdate":
+    description: Allow op can check plugin update.
+    default: op
+  "aur.version":
+    description: Allow op can check AUR version and update AUR.
+    default: op

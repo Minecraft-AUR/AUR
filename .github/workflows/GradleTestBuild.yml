@@ -1,0 +1,24 @@
+name: Gradle Test Build
+
+on:
+  - pull_request
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Java setup
+        uses: actions/setup-java@v2
+        with:
+          distribution: "zulu"
+          java-version: 8
+          cache: "gradle"
+      - name: "Give permission"
+        run: chmod gradlew 777
+      - name: "Build"
+        run: ./gradlew build

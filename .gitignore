@@ -1,0 +1,16 @@
+#IDEA
+.idea/
+.gradle/
+out/
+
+#Eclipse
+.classpath
+.project
+.settings/
+
+#NetBrains
+nbproject/
+nbactions.xml
+
+#Other
+build/

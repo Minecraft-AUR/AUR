@@ -1,5 +1,7 @@
 <div align="center"><img src=".github/AUR.png"></div>
 
+# NOW IN DEV
+
 # <center> **AUR**
 
 [![GitHub license](https://img.shields.io/github/license/Minecraft-AUR/AUR?style=flat-square)](https://github.com/Minecraft-AUR/AUR/)

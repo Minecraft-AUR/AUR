@@ -11,18 +11,20 @@ commands:
     description: Run this command to get AUR's help message.
 
 permissions:
-  "aur.update":
+  "aur.command.help":
+    description: Allow op can look AUR's help message.
+  "aur.command.update":
     description: Make op can update plugin.
     default: op
-  "aur.download":
+  "aur.command.download":
     description: To get AUR plugin Hub plugin.
     default: op
-  "aur.delete":
+  "aur.command.delete":
     description: Allow op to delete useless plugin and their folder.
     default: op
-  "aur.checkupdate":
+  "aur.command.checkupdate":
     description: Allow op can check plugin update.
     default: op
-  "aur.version":
+  "aur.command.version":
     description: Allow op can check AUR version and update AUR.
     default: op

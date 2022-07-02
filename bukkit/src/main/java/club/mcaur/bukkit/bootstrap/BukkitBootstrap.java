@@ -3,6 +3,9 @@ package club.mcaur.bukkit.bootstrap;
 import com.ejlchina.okhttps.HTTP;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.File;
+import java.nio.file.Paths;
+
 public class BukkitBootstrap extends JavaPlugin {
     HTTP http = HTTP.builder().build();
 
@@ -10,14 +13,31 @@ public class BukkitBootstrap extends JavaPlugin {
 
     @Override
     public void onLoad(){
-        System.out.println("Downloading AUR core and other dependencies...");
+        File dataFolder = getDataFolder();
+
+        if (!dataFolder.exists()) {
+            if (!dataFolder.mkdir()) {
+                getLogger().severe("Unable to create data folder,Disable plugin...");
+                getServer().getPluginManager().disablePlugin(this);
+                return;
+            }
+        }
+        File libsFolder = new File(dataFolder, "AUR-libs");
+        if (!libsFolder.exists()) {
+            if (!libsFolder.mkdir()) {
+                getLogger().severe("Unable to create libs folder,Disable plugin...");
+                getServer().getPluginManager().disablePlugin(this);
+                return;
+            }
+        }
+        getLogger().info("Downloading AUR core and other dependencies...");
         http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/AUR-core.jar").get().getBody()
-                .toFolder("//AUR/AUR-libs/")
+                .toFolder(libsFolder)
                 .start();
         http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/OkHttps3.jar").get().getBody()
-                .toFolder("//AUR/AUR-libs/")
+                .toFolder(libsFolder)
                 .start();
-        System.out.println("Download successful! Starting server...");
+        getLogger().info("Download successful! Starting server...");
     }
 
 

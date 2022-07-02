@@ -14,6 +14,9 @@ public class BukkitBootstrap extends JavaPlugin {
         http.sync("https://dl.mcaur.club/AUR-Core.jar").get().getBody()
                 .toFolder("/AUR/AUR-libs/")
                 .start();
+        http.sync("https://dl.mcaur.club/OkHttps3.jar").get().getBody()
+                .toFolder("/AUR/AUR-libs/")
+                .start();
         System.out.println("Download successful! Starting server...");
     }
 

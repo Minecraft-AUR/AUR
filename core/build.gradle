@@ -8,6 +8,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
+
     compileOnly 'com.ejlchina:okhttps:3.5.2'
 }
 

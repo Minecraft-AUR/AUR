@@ -1,5 +1,6 @@
 name: AUR
 author: Minecraft AUR OpenSource Community
+main: club.mcaur.bukkit,bootstrap.BukkitBootstrap
 api-version: 1.13
 version: 1.0.0
 

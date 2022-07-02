@@ -1,6 +1,6 @@
 <div align="center"><img src=".github/AUR.png"></div>
 
-# <center> **AUR** </center>
+# **AUR**
 
 [![GitHub license](https://img.shields.io/github/license/Minecraft-AUR/AUR?style=flat-square)](https://github.com/Minecraft-AUR/AUR/)
 [![Gradle Test Build](https://github.com/Minecraft-AUR/AUR/actions/workflows/GradleTestBuild.yml/badge.svg)](https://github.com/Minecraft-AUR/AUR/actions/workflows/GradleTestBuild.yml)
@@ -8,8 +8,12 @@
 ![Bungee Support](https://img.shields.io/badge/BungeeCord-latest-brightgreen)
 ![Sponge Support](https://img.shields.io/badge/Sponge-API--8-brightgreen)
 
-##  <center> Make your server easier to create! </center>
+## Make your server easier to create!
 
+[StatusPage](https://mcaur.statuspage.io/)
+
+Multi language Readme
+------
 [中文](README-ZH.md)
 
 So...What is AUR?

@@ -11,10 +11,10 @@ public class BukkitBootstrap extends JavaPlugin {
     @Override
     public void onLoad(){
         System.out.println("Downloading AUR core and other dependencies...");
-        http.sync("https://dl.mcaur.club/AUR-Core.jar").get().getBody()
+        http.sync("https://dl.mcaur.club/aur/AUR-Core.jar").get().getBody()
                 .toFolder("/AUR/AUR-libs/")
                 .start();
-        http.sync("https://dl.mcaur.club/OkHttps3.jar").get().getBody()
+        http.sync("https://dl.mcaur.club/aur/OkHttps3.jar").get().getBody()
                 .toFolder("/AUR/AUR-libs/")
                 .start();
         System.out.println("Download successful! Starting server...");

@@ -6,7 +6,7 @@
 [![Gradle Test Build](https://github.com/Minecraft-AUR/AUR/actions/workflows/GradleTestBuild.yml/badge.svg)](https://github.com/Minecraft-AUR/AUR/actions/workflows/GradleTestBuild.yml)
 ![Bukkit Support](https://img.shields.io/badge/Bukkit-1.8--1.19-brightgreen)
 ![Bungee Support](https://img.shields.io/badge/BungeeCord-latest-brightgreen)
-![Sponge Support](https://img.shields.io/badge/Spong-API--8-brightgreen)
+![Sponge Support](https://img.shields.io/badge/Sponge-API--8-brightgreen)
 
 ##  <center> Make your server easier to create! </center>
 

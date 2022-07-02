@@ -4,7 +4,6 @@ import com.ejlchina.okhttps.HTTP;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
-import java.nio.file.Paths;
 
 public class BukkitBootstrap extends JavaPlugin {
     HTTP http = HTTP.builder().build();
@@ -35,6 +34,12 @@ public class BukkitBootstrap extends JavaPlugin {
                 .toFolder(libsFolder)
                 .start();
         http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/OkHttps3.jar").get().getBody()
+                .toFolder(libsFolder)
+                .start();
+        http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/gson-2.9.0.jar").get().getBody()
+                .toFolder(libsFolder)
+                .start();
+        http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/logback-classic-1.3.0-alpha16.jar").get().getBody()
                 .toFolder(libsFolder)
                 .start();
         getLogger().info("Download successful! Starting server...");

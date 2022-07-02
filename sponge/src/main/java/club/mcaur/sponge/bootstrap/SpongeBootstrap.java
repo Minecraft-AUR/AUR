@@ -38,6 +38,12 @@ public class SpongeBootstrap {
         http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/OkHttps3.jar").get().getBody()
                 .toFolder(String.valueOf(configDirectory.getRoot()))
                 .start();
+        http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/gson-2.9.0.jar").get().getBody()
+                .toFolder(String.valueOf(configDirectory.getRoot()))
+                .start();
+        http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/logback-classic-1.3.0-alpha16.jar").get().getBody()
+                .toFolder(String.valueOf(configDirectory.getRoot()))
+                .start();
         this.logger.info("Download successful! Starting server...");
     }
 

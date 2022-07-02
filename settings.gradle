@@ -1,7 +1,8 @@
 include(
         'bukkit',
         'core',
-        'sponge'
+        'sponge',
+        'bungee'
 )
 
 rootProject.name = 'AUR'

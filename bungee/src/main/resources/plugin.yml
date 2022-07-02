@@ -1,0 +1,4 @@
+name: AUR
+version: 1.0.0
+main: com.mcaur.bootstrap.bungee.BungeeBootstrap
+author: Minecraft AUR OpenSource Community

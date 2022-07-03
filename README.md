@@ -26,15 +26,7 @@ Feature
 -----
 The global CDN in America, Asia and Europe allows you to quickly connect to AUR's plugin network at any time!
 
-TODO
------
-- [ ] AUR core
+### NOW IN DEVELOP
 
-- [ ] Plugin hub
-
-- [ ] Plugin load/unload
-
-- [ ] Plugin update/autoupdate
-
-- [ ] Bukkit/Sponge/BungeeCord/Velocity/Fabric support
+Speed of progress: 10%
 

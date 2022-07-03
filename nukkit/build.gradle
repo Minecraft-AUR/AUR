@@ -1,0 +1,18 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.nukkitx.com/main/' }
+}
+
+dependencies {
+    implementation 'com.ejlchina:okhttps:3.5.2'
+
+    compileOnly 'cn.nukkit:nukkit:1.0-SNAPSHOT'
+}
+
+shadowJar {
+    archivesBaseName = "AUR-Nukkit"
+}

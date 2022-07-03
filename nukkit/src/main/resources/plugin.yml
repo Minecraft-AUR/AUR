@@ -1,0 +1,6 @@
+name: AUR
+main: com.mcaur.nukkit.bootstrap.NukkitBootstrap
+version: "1.0.0"
+api: ["1.0.5"]
+load: POSTWORLD
+author: Minecraft AUR OpenSource Community

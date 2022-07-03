@@ -9,4 +9,22 @@ object AUR {
     val FABRIC_CLOUD = "https://cloud.mcaur.com/fabric/"
     val NUKKITX_CLOUD = "https://cloud.mcaur.com/nukkitx/"
 
+    fun BukkitEnable() {
+
+    }
+
+    fun SpongeEnable() {
+
+    }
+
+    fun BungeeEnable() {
+
+    }
+
+    fun FabricEnable() {
+
+    }
+    fun NukkitXEnable(){
+
+    }
 }

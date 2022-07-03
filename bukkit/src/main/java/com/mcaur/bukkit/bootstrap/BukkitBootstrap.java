@@ -6,13 +6,13 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.io.File;
 
 public class BukkitBootstrap extends JavaPlugin {
-    HTTP http = HTTP.builder().build();
 
     public static BukkitBootstrap INSTANCE;
 
     @Override
     public void onLoad(){
         File dataFolder = getDataFolder();
+        HTTP http = HTTP.builder().build();
 
         if (!dataFolder.exists()) {
             if (!dataFolder.mkdir()) {

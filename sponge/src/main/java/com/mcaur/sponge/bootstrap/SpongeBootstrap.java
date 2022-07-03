@@ -17,11 +17,10 @@ import java.util.logging.Logger;
 
 @Plugin("AUR")
 public class SpongeBootstrap {
-
-    HTTP http = HTTP.builder().build();
     private final PluginContainer container;
     private final Logger logger;
     private Path configDirectory;
+    HTTP http = HTTP.builder().build();
 
     @Inject
     SpongeBootstrap(final PluginContainer container, final Logger logger) {

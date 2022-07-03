@@ -17,16 +17,6 @@ dependencies {
     }
 }
 
-processResources {
-    filesMatching('META-INF/sponge_plugins.json') {
-        expand 'pluginVersion': project.ext.fullVersion
-    }
-}
-
 shadowJar {
-    archiveFileName = 'AUR-Sponge'
-}
-
-artifacts {
-    archives shadowJar
+    archivesBaseName = "AUR-Sponge"
 }

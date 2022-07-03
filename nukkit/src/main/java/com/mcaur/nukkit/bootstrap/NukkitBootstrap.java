@@ -1,33 +1,32 @@
-package com.mcaur.bootstrap.bungee;
+package com.mcaur.nukkit.bootstrap;
 
+import cn.nukkit.plugin.PluginBase;
 import com.ejlchina.okhttps.HTTP;
-import net.md_5.bungee.api.plugin.Plugin;
 
 import java.io.File;
 
-public class BungeeBootstrap extends Plugin {
+public class NukkitBootstrap extends PluginBase {
 
     @Override
-    public void onEnable() {
+    public void onLoad() {
         File dataFolder = getDataFolder();
         HTTP http = HTTP.builder().build();
 
         if (!dataFolder.exists()) {
             if (!dataFolder.mkdir()) {
-                getLogger().severe("Unable to create data folder,Disable plugin...");
-                getProxy().getPluginManager().unregisterListeners(this);
+                getLogger().error("Unable to create data folder,Disable plugin...");
+                getServer().getPluginManager().disablePlugin(this);
                 return;
             }
         }
         File libsFolder = new File(dataFolder, "AUR-libs");
         if (!libsFolder.exists()) {
             if (!libsFolder.mkdir()) {
-                getLogger().severe("Unable to create libs folder,Disable plugin...");
-                getProxy().getPluginManager().unregisterListeners(this);
+                getLogger().error("Unable to create libs folder,Disable plugin...");
+                getServer().getPluginManager().disablePlugin(this);
                 return;
             }
         }
-
         getLogger().info("Downloading AUR core and other dependencies...");
         http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/AUR-core.jar").get().getBody()
                 .toFolder(libsFolder)
@@ -42,5 +41,15 @@ public class BungeeBootstrap extends Plugin {
                 .toFolder(libsFolder)
                 .start();
         getLogger().info("Download successful! Starting server...");
+    }
+
+    @Override
+    public void onEnable() {
+
+    }
+
+    @Override
+    public void onDisable(){
+
     }
 }

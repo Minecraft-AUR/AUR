@@ -7,6 +7,10 @@
 
 ##  <center> 让你的开服之路变的更便捷! </center>
 
+[状态页面](https://mcaur.statuspage.io/)
+
+[构建服务器](http://101.200.240.210:8080)
+
 什么是AUR?
 ------
 AUR是一个插件仓库的实现, 类似于YUM的插件仓库, AUR旨在为广大腐竹提供最便捷的开服, 让你不用登陆SpigotMC或者GitHub就可以获得插件更新!

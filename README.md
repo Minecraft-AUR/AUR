@@ -12,7 +12,7 @@
 
 [StatusPage](https://mcaur.statuspage.io/)
 
-[CI Server(Only for Chinese)](http://101.200.240.210:8080)
+[CI Server](http://101.200.240.210:8080)
 
 Multi language Readme
 ------

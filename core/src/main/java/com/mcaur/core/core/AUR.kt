@@ -24,7 +24,11 @@ object AUR {
     fun FabricEnable() {
 
     }
-    fun NukkitXEnable(){
+    fun NukkitXEnable() {
+
+    }
+
+    fun VelocityEnable() {
 
     }
 }

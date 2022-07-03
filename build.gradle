@@ -9,7 +9,7 @@ subprojects {
     }
 
     jar {
-        from '../LICENSE.txt'
+        from '../LICENSE'
     }
 
     repositories {

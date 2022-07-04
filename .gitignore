@@ -22,3 +22,7 @@ build
 #Netbeans
 .nb-gradle
 .nb-gradle-properties
+
+#Other
+run
+logs

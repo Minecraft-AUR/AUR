@@ -17,9 +17,6 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:0.55.1+1.19"
 }
 
-processResources {
-    inputs.property 'version', project.ext.fullVersion
-    filesMatching('**/fabric.mod.json') {
-        expand 'version': project.ext.fullVersion
-    }
+shadowJar {
+    archivesBaseName = "AUR-Fabric"
 }

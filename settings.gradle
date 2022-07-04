@@ -15,8 +15,8 @@ include(
         'sponge',
         'bungee',
         'nukkit',
-        'velocity'
-        //'fabric'
+        'velocity',
+        'fabric'
 )
 
 rootProject.name = 'AUR'

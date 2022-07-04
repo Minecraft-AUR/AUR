@@ -36,13 +36,16 @@ public class SpongeBootstrap {
         http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/AUR-core.jar").get().getBody()
                 .toFolder(".//config/aur/AUR-libs")
                 .start();
-        http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/OkHttps3.jar").get().getBody()
+        http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/okhttps-3.5.2.jar").get().getBody()
                 .toFolder(".//config/aur/AUR-libs")
                 .start();
         http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/gson-2.9.0.jar").get().getBody()
                 .toFolder(".//config/aur/AUR-libs")
                 .start();
         http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/logback-classic-1.3.0-alpha16.jar").get().getBody()
+                .toFolder(".//config/aur/AUR-libs")
+                .start();
+        http.sync("https://aur-core.oss-cn-beijing.aliyuncs.com/aur/easysql-hikaricp-0.4.2.jar").get().getBody()
                 .toFolder(".//config/aur/AUR-libs")
                 .start();
         logger.info("Download successful! Starting server...");

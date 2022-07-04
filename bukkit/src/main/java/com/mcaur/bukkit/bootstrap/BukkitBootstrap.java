@@ -7,8 +7,6 @@ import java.io.File;
 
 public class BukkitBootstrap extends JavaPlugin {
 
-    public static BukkitBootstrap INSTANCE;
-
     @Override
     public void onLoad(){
         File dataFolder = getDataFolder();
@@ -48,6 +46,7 @@ public class BukkitBootstrap extends JavaPlugin {
 
     @Override
     public void onEnable() {
+
     }
 
     @Override

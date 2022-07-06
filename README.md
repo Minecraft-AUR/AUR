@@ -28,5 +28,5 @@ The global CDN in America, Asia and Europe allows you to quickly connect to AUR'
 
 ### NOW IN DEVELOP
 
-Speed of progress: 10%
+Speed of progress: 12%
 
